@@ -34,7 +34,48 @@ html{
                        var(--sb-track-color);
     }
   }
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .nav a{
+    font-size: 22px;
+    color: white;
+    padding: 8px 26px;
+    font-family: "Baloo Paaji 2", sans-serif;
+    text-decoration: none;    
+    opacity: 70%;
+}
+
+.nav a:hover{
+    color: rgb(18, 184, 214);
+}
 .nav {
+position: fixed;
+display: flex;
+justify-content: center;
+}
+
+.mid img{
+  width: 20px;
+}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+ table{
+    border-collapse: collapse;
+  }
+  .nav {
     position: fixed;
     width: 100%; 
     top: -5px;
@@ -78,7 +119,6 @@ html{
     opacity: 80%;
     display: flex;
     justify-content: center;
-    font-size: 20px;
     text-transform: lowercase;
     top: 190px;
     font-family: "Inconsolata", monospace; 
@@ -89,10 +129,105 @@ html{
 }
 #about p{
   position: relative;
-  top: 150px;
+  top: 110px;
   font-family: "Baloo Paaji 2", sans-serif;
   text-align: justify;
-  font-size: 19px;
+  font-size: 18px;
+  left: 140px;
+  margin-left: 0%;
+  margin-right: 10%;
+  opacity: 80%;
+  color: white;
+}
+#skills{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+#skills img{
+  position: relative;
+  
+}
+table th{
+  font-family: "Baloo Paaji 2", sans-serif;
+  opacity: 80%;
+}
+.mid{
+  display: flex;
+  justify-content: center;
+}
+.mid img{
+  width: 35%;
+  height: 30%;
+  position: relative;
+  top: 140px;
+  left: 120px;
+  border-radius: 20px;
+}
+} 
+@media only screen and (min-width: 1200px) {
+  table{
+    border-collapse: collapse;
+  }
+  .nav {
+    position: fixed;
+    width: 100%; 
+    top: -5px;
+    z-index: 1;
+    background-color: #161A1B;
+    height: 10%;
+    margin-top: 3px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav2{
+    display: flex;
+    justify-content: center;
+    margin-right: 1%;
+}
+.nav2 a{
+    padding: 18px 18px;
+    font-size: 20px;
+    position: relative;
+    top: 205px;
+    text-decoration: none;
+}
+.nav a{
+    font-size: 22px;
+    margin-top: 20px;
+    color: white;
+    padding: 8px 26px;
+    font-family: "Baloo Paaji 2", sans-serif;
+    text-decoration: none;
+    opacity: 70%;
+}
+
+.nav a:hover{
+    color: rgb(18, 184, 214);
+}
+.intro p {
+    position: relative;
+    opacity: 80%;
+    display: flex;
+    justify-content: center;
+    text-transform: lowercase;
+    top: 190px;
+    font-family: "Inconsolata", monospace; 
+    color: rgb(161, 209, 241);
+}
+.section{
+    height: 100vh;
+}
+#about p{
+  position: relative;
+  top: 110px;
+  font-family: "Baloo Paaji 2", sans-serif;
+  text-align: justify;
+  font-size: 18px;
   left: 180px;
   margin-left: 10%;
   margin-right: 10%;
@@ -123,4 +258,6 @@ table th{
   top: 140px;
   left: 280px;
   border-radius: 20px;
+}
+
 }
